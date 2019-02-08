@@ -3,18 +3,16 @@
     "Statement": [
         {
             "Effect": "Allow",
-            "Principal": "*",
             "Action": [
                 "s3:ListBucket",
                 "s3:GetBucketLocation"
             ],
             "Resource": [
-                "arn:aws:s3:::bucket-name"
+                "arn:aws:s3:::hsg-local"
             ]
         },
         {
             "Effect": "Allow",
-            "Principal": "*",
             "Action": [
                 "s3:PutObject",
                 "s3:PutObjectAcl",
@@ -22,7 +20,7 @@
                 "s3:DeleteObject"
             ],
             "Resource": [
-                "arn:aws:s3:::bucket-name/*"
+                "arn:aws:s3:::hsg-local/*"
             ]
         }
     ]
